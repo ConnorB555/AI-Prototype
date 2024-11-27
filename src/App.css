@@ -28,6 +28,46 @@
   color: #61dafb;
 }
 
+/* Button Styling */
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #282c34; /* Dark text for contrast */
+  background-color: #61dafb; /* Light blue button */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #21a1f1; /* Slightly darker shade of light blue for hover */
+}
+
+/* Media Query for Screens 300px Wide or Smaller */
+@media (max-width: 300px) {
+  .App-header {
+    background-color: #282c34;
+    padding: 15px;
+    font-size: 14px; /* Reduce text size for smaller screens */
+    border-radius: 5px;
+  }
+
+  button {
+    padding: 8px 15px; /* Smaller button for mobile */
+    font-size: 14px;
+    color: #282c34; /* Dark text for contrast */
+    background-color: #61dafb; /* Same light blue as desktop */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #21a1f1; /* Same hover color as desktop */
+  }
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
